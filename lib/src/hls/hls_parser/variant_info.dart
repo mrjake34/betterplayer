@@ -1,4 +1,3 @@
-
 class VariantInfo {
   VariantInfo({
     this.bitrate,
@@ -28,7 +27,7 @@ class VariantInfo {
   final String? captionGroupId;
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     if (other is VariantInfo) {
       return other.bitrate == bitrate &&
           other.videoGroupId == videoGroupId &&
@@ -40,6 +39,6 @@ class VariantInfo {
   }
 
   @override
-  int get hashCode =>  Object.hash(
+  int get hashCode => Object.hash(
       bitrate, videoGroupId, audioGroupId, subtitleGroupId, captionGroupId);
 }

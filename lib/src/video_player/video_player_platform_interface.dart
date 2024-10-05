@@ -408,7 +408,7 @@ class VideoEvent {
   final Duration? position;
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         other is VideoEvent &&
             runtimeType == other.runtimeType &&
@@ -515,7 +515,7 @@ class DurationRange {
   String toString() => '$runtimeType(start: $start, end: $end)';
 
   @override
-  bool operator ==(Object other) =>
+  bool operator ==(dynamic other) =>
       identical(this, other) ||
       other is DurationRange &&
           runtimeType == other.runtimeType &&

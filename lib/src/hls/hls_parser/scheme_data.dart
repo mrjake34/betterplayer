@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 
-
 class SchemeData {
   SchemeData({
 //    @required this.uuid,
@@ -35,7 +34,7 @@ class SchemeData {
       );
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     if (other is SchemeData) {
       return other.mimeType == mimeType &&
           other.licenseServerUrl == licenseServerUrl &&

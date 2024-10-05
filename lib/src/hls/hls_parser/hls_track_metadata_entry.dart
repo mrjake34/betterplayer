@@ -16,7 +16,7 @@ class HlsTrackMetadataEntry {
   final List<VariantInfo>? variantInfos;
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     if (other is HlsTrackMetadataEntry) {
       return other.groupId == groupId &&
           other.name == name &&
@@ -27,5 +27,5 @@ class HlsTrackMetadataEntry {
   }
 
   @override
-  int get hashCode =>  Object.hash(groupId, name, variantInfos);
+  int get hashCode => Object.hash(groupId, name, variantInfos);
 }

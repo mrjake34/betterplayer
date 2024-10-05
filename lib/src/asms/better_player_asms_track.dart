@@ -40,7 +40,7 @@ class BetterPlayerAsmsTrack {
   int get hashCode => super.hashCode;
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return other is BetterPlayerAsmsTrack &&
         width == other.width &&
         height == other.height &&
